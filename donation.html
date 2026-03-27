@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="stye1.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script src="script.js" defer></script>
-  
+  <script src="script.min.js?v=1" defer></script>
+   <link rel="icon" type="image/jpeg" href="https://klbonyan.org/img/حملة.jpg">
+  <link rel="shortcut icon" href="https://klbonyan.org/img/حملة.jpg" type="image/jpeg">
    
-   
+   <meta name="robots" content="noindex, nofollow">
+
 </head>
 <body>
 
-  <!-- رأس الصفحة -->
  
-    <!-- يمين: الصفحة الرئيسية + تواصل معنا -->
     
   <section class="intro" style="
   display: flex;
@@ -28,7 +28,7 @@
   flex-wrap: wrap; /* لتفادي كسر التصميم */
 ">
 
-  <!-- 🟩 يمين: الصفحة الرئيسية + تواصل معنا -->
+ 
   <div class="header-right" style="
     display: flex;
     flex-direction: column;
@@ -36,12 +36,10 @@
     text-align: right;
     gap: 6px;
   ">
-<!-- روابط الرأس -->
 
- <!-- روابط الرأس عمودية -->
 <div class="header-right" style="display:flex; flex-direction:column; gap:12px; align-items:flex-start;">
 
-  <a href="index.html" 
+  <a href="index" 
      data-ar='<i class="fa-solid fa-house" style="color:black; margin-left:5px;"></i> الرئيسية' 
      data-en='<i class="fa-solid fa-house" style="color:black; margin-left:5px;"></i> Home'
      style="
@@ -80,7 +78,7 @@
 
   </div>
 
-  <!-- 🟦 الوسط: شعار الحملة -->
+  
   <div class="logo-area" style="text-align:center; flex:1;">
     <img src="img/حملة.jpg" alt="Logo" style="
       height:180px;
@@ -92,7 +90,7 @@
     ">
   </div>
 
-  <!-- 🟥 يسار: تغيير اللغة -->
+
   <div class="header-left">
   <select id="languageSelect">
     <option value="ar">عربي</option>
@@ -108,31 +106,30 @@
   align-items: center;
 }
 
-/* تنسيق select عصري */
+
 #languageSelect {
   padding: 8px 14px;              
   border-radius: 10px;            
   border: none;                    
-   background: linear-gradient(135deg, #7b7e7f, #858a8d); /* تدرج برتقالي جميل */
-  color: white;                 /* نص داكن لتباين ممتاز */
+   background: linear-gradient(135deg, #7b7e7f, #858a8d);
+  color: white;               
   font-weight: 600;                
   font-size: 14px;                 
   cursor: pointer;                 
   transition: all 0.3s ease;      
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* ظل أكثر أناقة */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);  
 }
 
-/* تأثير عند التمرير */
+
 #languageSelect:hover {
   background: linear-gradient(135deg, #7b7e7f, #858a8d);
 }
 
-/* إزالة السهم الافتراضي في بعض المتصفحات */
+
 #languageSelect::-ms-expand {
   display: none;
 }
 
-/* خيارات القائمة */
 #languageSelect option {
   color: #1f1f1f;
   background-color: #fff;
@@ -142,26 +139,25 @@
 
 </section>
 
-<!-- Media Queries داخل الصفحة لتصغير العناصر للشاشات الصغيرة جداً -->
 <style>
 @media (max-width: 320px) {
   .intro {
-    flex-direction: row; /* نبقي العناصر أفقي */
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* توزيع متساوي بين العناصر */
-    padding: 5px 8px; /* تصغير البادينغ */
+    justify-content: space-between;
+    padding: 5px 8px;
   }
 
   .header-right, .header-left {
-    flex-direction: row; /* عناصر الروابط والاختيار أفقياً */
+    flex-direction: row;
     justify-content: flex-start;
-    gap: 4px; /* تقليل المسافة بينهم */
+    gap: 4px;
     width: auto;
     margin-bottom: 0;
   }
 
   .header-right a {
-    font-size: 12px; /* تصغير النصوص لتناسب العرض */
+    font-size: 12px;
     margin: 0 2px;
   }
 
@@ -171,7 +167,7 @@
   }
 
   .logo-area img {
-    height: 80px; /* تصغير الصورة */
+    height: 80px;
     width: 80px;
     border-width: 2px;
   }
@@ -200,7 +196,7 @@ Join us in building a classroom, a medical point, or a shelter that reunites a d
     </div>
 
     <div class="donation-card-container">
- <!-- بطاقة العملات الرقمية -->
+
 
 
     
@@ -209,8 +205,8 @@ Join us in building a classroom, a medical point, or a shelter that reunites a d
   <h3 data-ar="باي بال" data-en="PayPal">باي بال</h3>
   <p data-ar="ادفع بسهولة عبر حسابك" data-en="Pay easily via your account">ادفع بسهولة عبر حسابك</p>
   
-  <!-- هنا نضع رابط باي بال -->
-  <a href="https://www.paypal.com/donate/?hosted_button_id=CTDK9YLBZBHLY" 
+ 
+  <a href="https://www.paypal.com/donate/?hosted_button_id=AVFU8HNXTNT4Q" 
      target="_blank" 
      class="donate-btn" 
      data-ar="تبرع الآن" 
@@ -241,7 +237,7 @@ Join us in building a classroom, a medical point, or a shelter that reunites a d
 
 </div>
 
-<!-- النافذة المنبثقة -->
+
 <div id="qrModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
      background: rgba(0,0,0,0.6); z-index:1000;">
   
@@ -257,19 +253,19 @@ Join us in building a classroom, a medical point, or a shelter that reunites a d
     <img src="img/Screenshot 2025-10-26 200449.png" alt="TRON QR" 
          style="width:200px; margin:15px 0; border-radius:8px; border:2px solid #F0CC8E;">
     
-    <!-- نوع الشبكة -->
+   
     <p style="font-size:15px; color:#444; margin:8px 0;">
       <strong>نوع الشبكة:</strong> TRON (TRC20)
     </p>
 
-    <!-- عنوان المحفظة -->
+    
     <p id="walletAddress" 
        style="word-break: break-all; background:#0b0b0b; color:#F0CC8E; 
               padding:10px 12px; border-radius:8px; margin-top:5px; font-size:14px; direction:ltr;">
        TFeVnT2di1Ycnn3xBBT7HWqcESdV9R8fba
     </p>
 
-    <!-- زر نسخ العنوان -->
+    
    <button id="copyAddress" 
         style="
           margin-top:12px; 
@@ -285,7 +281,7 @@ Join us in building a classroom, a medical point, or a shelter that reunites a d
   📋 نسخ العنوان
 </button>
 
-    <!-- زر إغلاق -->
+    
     <button id="closeModal" 
             style="margin-top:15px; padding:10px 20px; border:none; 
                    background:#F0CC8E; color:#000; font-weight:bold; 

@@ -90,36 +90,33 @@ body {
 }
 
 
-
-
+/* --- القسم الرئيسي للـ hero-section --- */
 .hero-section {
   position: relative;
-  background-image: url('img/نهائي.webp');
+  background-image: url('img/5نهائي.jpg'); /* ضع مسار صورتك هنا */
+  background-position: center;   /* توسيط الصورة */
+  background-repeat: no-repeat;  /* منع التكرار */
+  background-size: cover;        /* تغطية العنصر بالكامل دون تشويه */
   
- background-size: 110% 110%;       
-  background-position: center;  
-  background-repeat: no-repeat;
-
-  width: 100%;                   /* يغطي العرض كامل */
-  height: 100vh;                
-
-  display: flex;                 /* تفعيل الفليكس */
-  justify-content: center;      
-  align-items: center;           /* توسيط عمودي */
-  flex-direction: column;        
-
+  width: 100%;       /* يغطي كامل العرض */
+  height: 100vh;     /* يغطي كامل ارتفاع الشاشة */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
   text-align: center;
   color: white;
   padding: 0 20px;
-
-  margin-top: 36px;     
+  
+  margin-top: 36px;
   box-sizing: border-box;
   border-radius: 20px;
   overflow: hidden;
 }
-
-
-
+/* --- النص داخل الـ hero-section --- */
+/* --- النص داخل الـ hero-section --- */
 .header-text {
   position: absolute;
   top: 50%;
@@ -136,24 +133,32 @@ body {
   z-index: 5;
 }
 
-/* 📱 شاشات متوسطة */
-@media (max-width: 768px) {
+/* --- تعديلات الجوال الصغير جدًا --- */
+@media (max-width: 480px) {
+  .hero-section {
+    background-size: cover;       /* تغطي كامل العرض */
+    background-position: center;  /* توسيط الصورة */
+    padding: 0 15px;              /* مسافة من الحواف */
+  }
+
   .header-text {
-    font-size: 1px; /* صغر الخط أكثر */
-    padding: 15px 15px;
+    font-size: 8px;       /* أصغر خط ممكن عمليًا */
+    padding: 3px;
+    top: 25%;              /* رفع النص أكثر */
   }
 }
 
-/* 📱 جوال صغير جدًا */
 @media (max-width: 480px) {
   .header-text {
-    font-size: 16px; /* تصغير إضافي للخط */
-    padding: 10px 10px;
+    font-size: 15px !important;  /* إجبار الخط على الصغر */
+    padding: 3px !important;
+    top: 50% !important;
   }
 }
 
 
 /* الزر يظل بأسفل الصورة */
+/* الزر يظل أسفل الصورة على الكمبيوتر */
 .donate-container {
   position: absolute;
   bottom: 20px;
@@ -162,9 +167,36 @@ body {
   z-index: 10;
 }
 
+/* الجوال */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 200px;
+  }
+
+  .header-text {
+    font-size: 28px;
+  }
+
+  .donate-container {
+    bottom: auto;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .donate-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+
+    /* نجبر الأنيميشن على استخدام scale أصغر على الجوال */
+    animation: pulseGlowMobile 2s infinite ease-in-out;
+  }
+}
+
+
 .donate-btn {
-  font-size: 18px;
-  padding: 12px 24px;
+  font-size: 14px;
+  padding: 8px 20px;
   font-weight: bold;
   background-color: #F0CC8E;
   color: black;
@@ -185,24 +217,24 @@ body {
   transition: all 0.3s ease;
 }
 
-/* أنيميشن نبض + توهج */
-@keyframes pulseGlow {
+/* أنيميشن الزر على الجوال */
+@keyframes pulseGlowMobile {
   0% {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(0.8); /* أصغر من الوضع الافتراضي */
     box-shadow: 
       0 0 15px rgba(240, 204, 142, 0.9),
       0 0 30px rgba(240, 204, 142, 0.7),
       0 0 45px rgba(240, 204, 142, 0.5);
   }
   50% {
-    transform: scale(1.1);
+    transform: translate(-50%, -50%) scale(0.88); /* نبض أصغر */
     box-shadow: 
       0 0 25px rgba(240, 204, 142, 1),
       0 0 50px rgba(240, 204, 142, 0.9),
       0 0 75px rgba(240, 204, 142, 0.7);
   }
   100% {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(0.8);
     box-shadow: 
       0 0 15px rgba(240, 204, 142, 0.9),
       0 0 30px rgba(240, 204, 142, 0.7),
@@ -219,22 +251,6 @@ body {
     0 0 120px rgba(240, 204, 142, 0.85);
 }
 
-
-/* الجوال */
-@media (max-width: 768px) {
-  .hero-section {
-    height: 400px; /* بس يتقلص شوية */
-  }
-
-  .header-text {
-    font-size: 28px;
-  }
-
-  .donate-btn {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
-}
 
 
 
