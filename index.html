@@ -240,7 +240,54 @@
            data-en=" A policy paper analyzing the collapse of Gaza's wage system post-Oct 7 and the shift to an aid-based economy, offering strategic recommendations for labor market recovery and Cash for Work programs.">
         ورقة سياسات تحلل انهيار منظومة الأجور في غزة بعد 7 أكتوبر والتحول نحو اقتصاد المساعدات، مع تقديم توصيات لإنعاش سوق العمل وبرامج "النقد مقابل العمل
         </p>
-        <a href="#" class="read-more" data-ar="اقرأ المزيد" data-en="Read More">اقرأ المزيد</a>
+        <!-- زر تحميل ملف الـ PDF -->
+<a href="رابط_الورقة_هنا" class="pdf-btn" data-ar="تحميل PDF" data-en="Download PDF">
+    <i class="fas fa-file-pdf"></i> 
+    <span class="btn-text" data-ar="تحميل PDF" data-en="Download PDF">تحميل PDF</span>
+</a>
+
+<style>
+    .pdf-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background-color: #ffffff; /* خلفية بيضاء */
+        color: #333; /* لون النص */
+        padding: 12px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        border: 2px solid #F0CC8E; /* إطار بلون كالبنيان الذهبي */
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    /* أيقونة الـ PDF باللون الأحمر المميز */
+    .pdf-btn i {
+        font-size: 20px;
+        color: #e74c3c; 
+    }
+
+    /* تأثير عند تمرير الماوس */
+    .pdf-btn:hover {
+        background-color: #F0CC8E; /* يتحول للون الذهبي */
+        color: #000;
+        transform: translateY(-3px); /* يرتفع قليلاً */
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .pdf-btn:active {
+        transform: translateY(0);
+    }
+
+    /* تنسيق اتجاه النص عند تبديل اللغة للإنجليزية */
+    body.en .pdf-btn {
+        flex-direction: row; /* يضمن بقاء الأيقونة بجانب النص بشكل صحيح */
+    }
+</style>
       </div>
     </div>
   </div>
