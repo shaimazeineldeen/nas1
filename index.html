@@ -229,69 +229,102 @@
   
   <div class="news-container">
     <!-- خبر وحيد -->
-    <div class="news-card" style="max-width: 400px; margin: 0 auto;">
-      <div class="news-img">
-        <img src="img/news1.jpg" alt="News 1"> 
-        <span class="news-date">1 May 2026</span>
-      </div>
-      <div class="news-info">
-        <h3 data-ar="ورقة سياسات" data-en="Policy Paper">عنوان الخبر هنا</h3>
-        <p data-ar="ورقة سياسات تحلل انهيار منظومة الأجور في غزة بعد 7 أكتوبر والتحول نحو اقتصاد المساعدات، مع تقديم توصيات لإنعاش سوق العمل وبرامج النقد مقابل العمل" 
-           data-en=" A policy paper analyzing the collapse of Gaza's wage system post-Oct 7 and the shift to an aid-based economy, offering strategic recommendations for labor market recovery and Cash for Work programs.">
-        ورقة سياسات تحلل انهيار منظومة الأجور في غزة بعد 7 أكتوبر والتحول نحو اقتصاد المساعدات، مع تقديم توصيات لإنعاش سوق العمل وبرامج "النقد مقابل العمل
-        </p>
-        <!-- زر تحميل ملف الـ PDF -->
-<a href="pdf/policy-paper-2026.pdf" class="pdf-btn" data-ar="تحميل PDF" data-en="Download PDF">
-    <i class="fas fa-file-pdf"></i> 
-    <span class="btn-text" data-ar="تحميل PDF" data-en="Download PDF">تحميل PDF</span>
-</a>
+    <!-- كرت ورقة السياسات مع الصورة كاملة وزر التحميل -->
+<div class="news-card" style="max-width: 500px; margin: 0 auto;">
+  <div class="news-img">
+    <!-- الصورة ستظهر هنا كاملة دون قص -->
+    <img src="img/policy-paper.jpg" alt="Policy Paper" class="full-img"> 
+    <span class="news-date">1 May 2026</span>
+  </div>
+  <div class="news-info">
+    <h3 data-ar="من اقتصاد الإنتاج إلى اقتصاد المساعدات" data-en="From Production to Aid Economy">
+      من اقتصاد الإنتاج إلى اقتصاد المساعدات
+    </h3>
+    <p data-ar="ورقة سياسات تحلل انهيار منظومة الأجور في غزة بعد 7 أكتوبر والتحول نحو اقتصاد المساعدات، مع تقديم توصيات لإنعاش سوق العمل وبرامج 'النقد مقابل العمل'." 
+       data-en="A policy paper analyzing the collapse of Gaza's wage system post-Oct 7 and the shift to an aid-based economy, offering strategic recommendations for labor market recovery and 'Cash for Work' programs.">
+       ورقة سياسات تحلل انهيار منظومة الأجور في غزة بعد 7 أكتوبر والتحول نحو اقتصاد المساعدات، مع تقديم توصيات لإنعاش سوق العمل وبرامج "النقد مقابل العمل".
+    </p>
+    
+    <!-- زر تحميل ملف الـ PDF -->
+    <a href="pdf/policy-paper-2026.pdf" class="pdf-btn" data-ar="تحميل PDF" data-en="Download PDF">
+        <i class="fas fa-file-pdf"></i> 
+        <span class="btn-text" data-ar="تحميل PDF" data-en="Download PDF">تحميل PDF</span>
+    </a>
+  </div>
+</div>
 
 <style>
+    /* تعديل الصورة لتظهر كاملة */
+    .news-img {
+        position: relative;
+        height: 300px; /* يمكنك زيادة الارتفاع حسب شكل غلاف الورقة */
+        background-color: #f0f0f0; /* خلفية رمادية خفيفة للمساحات الفارغة حول الصورة */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .news-img img.full-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* هذا هو السر: يمنع قص الصورة ويظهرها كاملة */
+        padding: 10px; /* لإضافة مسافة جمالية حول الصورة */
+    }
+
+    /* تنسيق زر الـ PDF */
     .pdf-btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         gap: 12px;
-        background-color: #ffffff; /* خلفية بيضاء */
-        color: #333; /* لون النص */
+        background-color: #ffffff;
+        color: #333;
         padding: 12px 25px;
         border-radius: 10px;
         text-decoration: none;
         font-weight: bold;
         font-size: 16px;
-        border: 2px solid #F0CC8E; /* إطار بلون كالبنيان الذهبي */
+        border: 2px solid #F0CC8E;
         transition: all 0.3s ease;
         cursor: pointer;
         box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        margin-top: 10px;
     }
 
-    /* أيقونة الـ PDF باللون الأحمر المميز */
     .pdf-btn i {
         font-size: 20px;
         color: #e74c3c; 
     }
 
-    /* تأثير عند تمرير الماوس */
     .pdf-btn:hover {
-        background-color: #F0CC8E; /* يتحول للون الذهبي */
+        background-color: #F0CC8E;
         color: #000;
-        transform: translateY(-3px); /* يرتفع قليلاً */
+        transform: translateY(-3px);
         box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     }
 
-    .pdf-btn:active {
-        transform: translateY(0);
+    /* تنسيق الكرت بشكل عام */
+    .news-card {
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        text-align: right;
     }
 
-    /* تنسيق اتجاه النص عند تبديل اللغة للإنجليزية */
+    .news-info {
+        padding: 20px;
+    }
+
+    body.en .news-card {
+        text-align: left;
+    }
+    
     body.en .pdf-btn {
-        flex-direction: row; /* يضمن بقاء الأيقونة بجانب النص بشكل صحيح */
+        flex-direction: row;
     }
 </style>
-      </div>
-    </div>
-  </div>
-
   <style>
     /* تنسيقات قسم الأخبار المدمجة */
     .news-section {
