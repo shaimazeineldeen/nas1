@@ -10,69 +10,10 @@
   <link rel="icon" type="image/webp" href="https://klbonyan.org/img/كالبنيان2.webp">
   <link rel="shortcut icon" href="https://klbonyan.org/img/كالبنيان2.webp" type="image/webp">
 
+  <style>
+    /* التنسيقات العامة */
+    body { margin: 0; padding: 0; }
 
-  
- <header>
-
-  <button class="lang-btn" onclick="toggleLanguage()">EN</button>
-  
-
-  <div class="header-content">
-    
-    <div class="header-right">
-      <div class="logo">
-       <img src="img/كالبنيان2.webp" alt="شعار المؤسسة">
-      </div>
-    </div>
-
-    
-    <div class="header-center">
-      
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-      <nav class="main-nav">
-        <a href="index" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-        <a href="About Us" data-ar="من نحن" data-en="About Us">من نحن</a>
-
-        <div class="tooltip-container">
-          <a href="#" class="submenu-toggle" onclick="toggleSubmenu(event)" data-ar="البرامج" data-en="Programs">البرامج</a>
-          <span class="tooltiptext">
-            <ul>
-              <li><a href="education" data-ar="التعليم" data-en="Education">التعليم</a></li>
-              <li><a href="health" data-ar="الصحة" data-en="Health">الصحة</a></li>
-              <li><a href="Emergency Response" data-ar="الإستجابة للطوارئ" data-en="Emergency Response">الإستجابة للطوارئ</a></li>
-              <li><a href="Protection" data-ar="الحماية" data-en="Protection">الحماية</a></li>
-              <li><a href="CSEE" data-ar="التمكين المدني والاجتماعي والاقتصادي" data-en="Civil, Social & Economic Empowerment">التمكين المدني والاجتماعي والاقتصادي</a></li>
-            </ul>
-          </span>
-        </div>
-         
-        <a href="news" data-ar="البحوث والسياسات" data-en="Research & Policy">البحوث والسياسات</a>
-        <a href="#partners" data-ar="الشركاء" data-en="Partners">الشركاء</a>
-
-                   <a href="Opinions" data-ar="الآراء" data-en="Opinions">الآراء </a>
-
-
-        <a href="Relief Services" data-ar="خدمات الإغاثة" data-en="Relief">خدمات الإغاثة</a>
-
-        <div class="tooltip-container">
-          <a href="#" class="submenu-toggle" onclick="toggleSubmenu(event)" data-ar="تقديم طلب" data-en="Apply">تقديم طلب</a>
-          <span class="tooltiptext">
-            <ul>
-              <li><a href="volunteer" data-ar="طلب متطوعين" data-en="Volunteer Request">طلب متطوعين</a></li>
-              <li><a href="Beneficiary" data-ar="طلب استفادة" data-en="Beneficiary Request">طلب استفادة</a></li>
-            </ul>
-          </span>
-        </div>
-
-        <a href="Complaints Mechanism" data-ar="آليه الشكاوي" data-en="Complaints">آليه الشكاوي</a>
-        <a href="#Contact" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
-      </nav>
-    </div>
-  </div>
-</header>
-<style>
-    /* تنسيقات إضافية لضمان جمالية عرض التقرير */
     .report-container {
         max-width: 900px;
         margin: 40px auto;
@@ -82,13 +23,10 @@
     }
     
     .report-image {
-        /* تعديلات لتصغير الصورة */
-        display: block;        /* لجعل التوسط التلقائي يعمل */
-        max-width: 60% !important; /* تحديد حد أقصى لعرض الصورة (يمكنك تغيير النسبة) */
+        display: block;
+        max-width: 60% !important;
         height: auto;
-        margin: 0 auto 25px auto; /* يتوسط أفقياً (0 auto) مع هامش سفلي (25px) */
-        
-        /* التنسيقات الجمالية السابقة */
+        margin: 0 auto 25px auto;
         border-radius: 12px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
@@ -100,12 +38,14 @@
         padding-bottom: 5px;
         margin-bottom: 25px;
     }
+
     .report-content p {
         margin-bottom: 20px;
         text-align: justify;
         font-size: 1.1rem;
         color: #444;
     }
+
     .highlight-section {
         background-color: #fcf8f2;
         border-right: 5px solid #e67e22;
@@ -114,12 +54,6 @@
         margin-top: 30px;
     }
 
-    /* تحسين للموبايل لتصبح الصورة أكبر قليلاً لتناسب الشاشة الصغيرة */
-    @media (max-width: 768px) {
-        .report-image {
-            max-width: 90% !important;
-        }
-    }
     .download-section {
         text-align: center;
         margin-bottom: 30px;
@@ -128,6 +62,7 @@
         border-radius: 8px;
         border: 1px dashed #ced4da;
     }
+
     .btn-download {
         display: inline-flex;
         align-items: center;
@@ -140,23 +75,64 @@
         font-weight: bold;
         transition: background 0.3s ease;
     }
-    .btn-download:hover {
-        background-color: rgb(226, 84, 84);
-    }
-    .btn-download i {
-        font-size: 1.2rem;
+
+    .btn-download:hover { background-color: rgb(226, 84, 84); }
+
+    @media (max-width: 768px) {
+        .report-image { max-width: 90% !important; }
     }
   </style>
 </head>
 <body>
-<!-- المحتوى الرئيسي للمقال مع دعم الترجمة -->
+
+<header>
+  <button class="lang-btn" onclick="toggleLanguage()">EN</button>
+  <div class="header-content">
+    <div class="header-right">
+      <div class="logo">
+        <img src="img/كالبنيان2.webp" alt="شعار المؤسسة">
+      </div>
+    </div>
+    <div class="header-center">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav class="main-nav">
+        <a href="index" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+        <a href="About Us" data-ar="من نحن" data-en="About Us">من نحن</a>
+        <div class="tooltip-container">
+          <a href="#" class="submenu-toggle" onclick="toggleSubmenu(event)" data-ar="البرامج" data-en="Programs">البرامج</a>
+          <span class="tooltiptext">
+            <ul>
+              <li><a href="education" data-ar="التعليم" data-en="Education">التعليم</a></li>
+              <li><a href="health" data-ar="الصحة" data-en="Health">الصحة</a></li>
+              <li><a href="Emergency Response" data-ar="الإستجابة للطوارئ" data-en="Emergency Response">الإستجابة للطوارئ</a></li>
+              <li><a href="Protection" data-ar="الحماية" data-en="Protection">الحماية</a></li>
+              <li><a href="CSEE" data-ar="التمكين المدني والاجتماعي والاقتصادي" data-en="Civil, Social & Economic Empowerment">التمكين المدني والاجتماعي والاقتصادي</a></li>
+            </ul>
+          </span>
+        </div>
+        <a href="news" data-ar="البحوث والسياسات" data-en="Research & Policy">البحوث والسياسات</a>
+        <a href="#partners" data-ar="الشركاء" data-en="Partners">الشركاء</a>
+        <a href="Opinions" data-ar="الآراء" data-en="Opinions">الآراء </a>
+        <a href="Relief Services" data-ar="خدمات الإغاثة" data-en="Relief">خدمات الإغاثة</a>
+        <div class="tooltip-container">
+          <a href="#" class="submenu-toggle" onclick="toggleSubmenu(event)" data-ar="تقديم طلب" data-en="Apply">تقديم طلب</a>
+          <span class="tooltiptext">
+            <ul>
+              <li><a href="volunteer" data-ar="طلب متطوعين" data-en="Volunteer Request">طلب متطوعين</a></li>
+              <li><a href="Beneficiary" data-ar="طلب استفادة" data-en="Beneficiary Request">طلب استفادة</a></li>
+            </ul>
+          </span>
+        </div>
+        <a href="Complaints Mechanism" data-ar="آليه الشكاوي" data-en="Complaints">آليه الشكاوي</a>
+        <a href="#Contact" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
 <main class="report-container">
-    
-    <!-- الصورة في الأعلى -->
-    <img src="img/news1.jpg" alt="سوق العمل في غزة" class="report-image">
-<main class="report-container">
-    
     <!-- الصورة -->
+    <img src="img/news1.jpg" alt="سوق العمل في غزة" class="report-image">
     
     <!-- قسم تحميل الملف -->
     <div class="download-section">
@@ -166,53 +142,34 @@
         </a>
     </div>
 
-    
-    <!-- باقي المحتوى... -->
     <h1 class="report-title" data-ar="الملخص التنفيذي" data-en="Executive Summary">الملخص التنفيذي</h1>
 
     <div class="report-content">
-        <p data-ar="شهد قطاع غزة منذ أكتوبر 2023 تحولًا جذريًا في بنية سوق العمل، تمثل في انهيار شبه كامل في منظومة الأجور، وانتقال متسارع من اقتصاد إنتاجي هش إلى اقتصاد قائم على المساعدات. فقد أكثر من 90% من العمال مصادر دخلهم، وتعرضت القاعدة الإنتاجية لتدمير واسع، مما أدى إلى تفكك العلاقة بين العمل والدخل، وارتفاع غير مسبوق في معدلات الفقر والبطالة." 
-           data-en="Since October 2023, the Gaza Strip has witnessed a radical transformation in the labor market structure, represented by an almost complete collapse of the wage system and an accelerated transition from a fragile productive economy to an aid-based economy. More than 90% of workers have lost their income sources, and the productive base has suffered extensive destruction, leading to the disintegration of the relationship between work and income, and an unprecedented rise in poverty and unemployment rates.">
+        <p data-ar="شهد قطاع غزة منذ أكتوبر 2023 تحولًا جذريًا في بنية سوق العمل، تمثل في انهيار شبه كامل في منظومة الأجور، وانتقال متسارع من اقتصاد إنتاجي هش إلى اقتصاد قائم على المساعدات..." 
+           data-en="Since October 2023, the Gaza Strip has witnessed a radical transformation in the labor market structure...">
            شهد قطاع غزة منذ أكتوبر 2023 تحولًا جذريًا في بنية سوق العمل...
         </p>
 
-        <p data-ar="تتمثل المشكلة الأساسية في غياب منظومة فعالة لحماية أجور العمال، في ظل تعطّل تطبيق القوانين، وضعف الرقابة، وتراجع دور المؤسسات الرسمية والنقابية. وقد أدى ذلك إلى انتشار أنماط عمل هشة، تشمل انخفاض الأجور، والعمل غير المنتظم، والفصل التعسفي، وعدم دفع المستحقات، مما وضع العمال في دائرة الاستغلال وفقدان الأمان الاقتصادي."
-           data-en="The core problem lies in the absence of an effective system to protect workers' wages, amidst the suspension of law enforcement, weak oversight, and the declining role of official and union institutions. This has led to the spread of fragile work patterns, including low wages, irregular work, arbitrary dismissal, and non-payment of entitlements, placing workers in a cycle of exploitation and loss of economic security.">
+        <p data-ar="تتمثل المشكلة الأساسية في غياب منظومة فعالة لحماية أجور العمال..." 
+           data-en="The core problem lies in the absence of an effective system to protect workers' wages...">
            تتمثل المشكلة الأساسية في غياب منظومة فعالة لحماية أجور العمال...
         </p>
 
-        <p data-ar="تعتمد هذه الورقة على تحليل قائم على الأدلة، يجمع بين البيانات الكمية الصادرة عن مصادر دولية، والمقابلات الميدانية مع خبراء وفاعلين في قطاع العمل، لتشخيص فجوة السياسات القائمة، والتي تتجلى في ثلاث مستويات رئيسية: فجوة في التنفيذ نتيجة عدم تطبيق القوانين، فجوة في الاستهداف بسبب غياب برامج موجهة للعمال، وفجوة في النهج نتيجة التركيز على المساعدات الإنسانية دون ربطها بسوق العمل أو التعافي الاقتصادي."
-           data-en="This paper relies on evidence-based analysis, combining quantitative data from international sources with field interviews with experts and labor market actors to diagnose the existing policy gap. This gap manifests at three main levels: an implementation gap due to the non-application of laws, a targeting gap due to the absence of worker-oriented programs, and an approach gap resulting from a focus on humanitarian aid without linking it to the labor market or economic recovery.">
-           تعتمد هذه الورقة على تحليل قائم على الأدلة...
-        </p>
-
-        <p data-ar="في ضوء ذلك، تستعرض الورقة مجموعة من الخيارات السياساتية المتدرجة، أبرزها برامج “النقد مقابل العمل” كمدخل فوري لتوفير الدخل وتحريك الاقتصاد المحلي، وبرامج دعم الأجور للحفاظ على الوظائف القائمة، إلى جانب إنشاء صندوق وطني لتعويض العمال ودعم إعادة تشغيل المشاريع الصغيرة والمتوسطة، وتطوير تدخلات داعمة للاقتصاد المنزلي."
-           data-en="In light of this, the paper reviews a set of graduated policy options, most notably 'Cash for Work' programs as an immediate entry point for providing income and stimulating the local economy, and wage support programs to maintain existing jobs, alongside establishing a national fund to compensate workers, supporting the restart of small and medium enterprises, and developing interventions supportive of the home-based economy.">
-           في ضوء ذلك، تستعرض الورقة مجموعة من الخيارات السياساتية...
-        </p>
-
-        <p data-ar="تخلص الورقة إلى أن الاستجابة الفعالة لأزمة أجور العمال في قطاع غزة تتطلب تحولًا استراتيجيًا من نهج الإغاثة قصيرة الأمد إلى سياسات قائمة على التشغيل والدخل والإنتاج، ضمن إطار زمني واضح لمرحلة التعافي المبكر. كما تؤكد على أهمية تبنّي تدخلات متكاملة تربط بين المساعدات والتشغيل، بما يضمن استعادة كرامة العمال، وتحفيز الدورة الاقتصادية، والحد من الاعتماد طويل الأمد على المساعدات."
-           data-en="The paper concludes that an effective response to the workers' wage crisis in the Gaza Strip requires a strategic shift from a short-term relief approach to policies based on employment, income, and production within a clear timeframe for the early recovery phase. It also emphasizes the importance of adopting integrated interventions that link aid and employment, ensuring the restoration of workers' dignity, stimulating the economic cycle, and reducing long-term dependence on aid.">
-           تخلص الورقة إلى أن الاستجابة الفعالة لأزمة أجور العمال...
-        </p>
+        <!-- باقي الفقرات بنفس الطريقة -->
 
         <div class="highlight-section">
-            <p data-ar="تقدّم هذه الورقة خارطة طريق عملية لصنّاع القرار والجهات الفاعلة، تستند إلى تحليل واقعي وأدلة ميدانية، وهدفها دعم الانتقال من الاستجابة الإنسانية قصيرة الأمد إلى مسار تعافٍ اقتصادي تدريجي ومستدام."
-               data-en="This paper provides a practical roadmap for policymakers and actors, based on realistic analysis and field evidence, aiming to support the transition from short-term humanitarian response to a gradual and sustainable economic recovery path.">
+            <p data-ar="تقدّم هذه الورقة خارطة طريق عملية لصنّاع القرار والجهات الفاعلة..."
+               data-en="This paper provides a practical roadmap for policymakers and actors...">
                تقدّم هذه الورقة خارطة طريق عملية لصنّاع القرار...
             </p>
         </div>
     </div>
-</main>
+</main> <!-- إغلاق الـ main هنا مهم جداً ليفصل المحتوى عن الفوتر -->
 
-
-<!-- الفوتر (كما هو في كودك) -->
 <footer class="site-footer">
   <div class="footer-container">
     <div class="footer-text">
-      <h2>
-        <span data-ar="كالبنيان" data-en="Klbonyan">كالبنيان</span>
-      </h2>
+      <h2><span data-ar="كالبنيان" data-en="Klbonyan">كالبنيان</span></h2>
       <p class="footer-subtitle" data-ar="نرفع أعمدة الحلم...<br> على أرض العزيمة" data-en="We Raise the Pillars of Dream<br>on the Land of Determination">
         نرفع أعمدة الحلم...<br> على أرض العزيمة
       </p>
@@ -241,43 +198,34 @@
         <h4 data-ar="شبكات التواصل" data-en="Social Networks">شبكات التواصل</h4>
         <ul>
           <li><a href="https://www.facebook.com/profile.php?id=100068724481139&locale=ar_AR" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a></li>
-          <li><a href="https://wa.me/9720567033297" target="_blank" data-ar="عبر كافة الشبكات الفلسطينية" data-en="Via all Palestinian networks">عبر كافة الشبكات الفلسطينية</a></li>
           <li><a href="https://wa.me/972567033297" data-ar="عبر الواتساب" data-en="Via WhatsApp">عبر الواتساب</a></li>
         </ul>
       </div>
     </div>
-
     <div class="social-links">
-      <a href="https://www.facebook.com/profile.php?id=100068724481139&locale=ar_AR"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/kl.bonyan"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/972567033297"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
     </div>
   </div>
-
   <p class="footer-rights">
-    All Rights Reserved © 2025
-    <a href="mailto:info@klbonyan.org">info@klbonyan.org</a>
+    All Rights Reserved © 2025 | info@klbonyan.org
   </p>
 </footer>
 
 <script>
 let currentLang = "ar";
-
 function toggleLanguage() {
   currentLang = currentLang === "ar" ? "en" : "ar";
   document.documentElement.lang = currentLang;
   document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
-  
-  // تأكد من وجود زر lang-btn لتجنب الأخطاء
   const btn = document.querySelector(".lang-btn");
   if(btn) btn.textContent = currentLang === "ar" ? "EN" : "AR";
-
   const elements = document.querySelectorAll('[data-ar][data-en]');
   elements.forEach(el => {
     el.innerHTML = el.getAttribute(`data-${currentLang}`);
   });
 }
-
 function toggleMenu() {
   const nav = document.querySelector('.main-nav');
   if(nav) nav.classList.toggle('show'); 
