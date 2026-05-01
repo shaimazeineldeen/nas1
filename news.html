@@ -3,155 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سياسة الخصوصية</title>
- <link rel="stylesheet" href="volunteer.min.css?v=2">
-
-<script src="script.min.js?v=1" defer></script>
+  <title>البحوث والسياسات | الملخص التنفيذي</title>
+  <link rel="stylesheet" href="volunteer.min.css?v=2">
+  <script src="script.min.js?v=1" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="icon" type="image/webp" href="https://klbonyan.org/img/كالبنيان2.webp">
   <link rel="shortcut icon" href="https://klbonyan.org/img/كالبنيان2.webp" type="image/webp">
+
   <style>
-  
-       
-.lang-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px 18px;
-  background: #F0CC8E;
-  color: #333;
-  font-weight: bold;
-  font-size: 16px;
-  border: 2px solid #707271;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-
- 
-  left: 80px; 
-}
-
-html[dir="ltr"] .lang-btn {
-  left: auto;  
-  right: 80px; 
-}
-
-.lang-btn:hover {
-  background: #e0b96d;
-  color: white;
-  transform: translateY(-50%) scale(1.05);
-}
-
-.lang-btn:active {
-  transform: translateY(-50%) scale(0.95);
-}
-
-    
-    
+    /* تنسيقات إضافية لضمان جمالية عرض التقرير */
+    .report-container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #fff;
+        line-height: 1.8;
+    }
+    .report-image {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .report-title {
+        color: #2c3e50;
+        border-bottom: 3px solid #e67e22;
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 25px;
+    }
+    .report-content p {
+        margin-bottom: 20px;
+        text-align: justify;
+        font-size: 1.1rem;
+        color: #444;
+    }
+    .highlight-section {
+        background-color: #fcf8f2;
+        border-right: 5px solid #e67e22;
+        padding: 20px;
+        border-radius: 4px;
+        margin-top: 30px;
+    }
   </style>
 </head>
 <body>
-<header>
-  
-  <button class="lang-btn" onclick="toggleLanguage()">EN</button>
-
-  <div class="header-content">
+<!-- المحتوى الرئيسي للمقال مع دعم الترجمة -->
+<main class="report-container">
     
-    <div class="header-right">
-      <div class="logo">
-        <img src="img/كالبنيان2.webp" alt="شعار المؤسسة">
-      </div>
-    </div>
+    <!-- الصورة في الأعلى -->
+    <img src="https://via.placeholder.com/900x450" alt="سوق العمل في غزة" class="report-image">
 
-    
-    <div class="header-center">
-      
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <h1 class="report-title" data-ar="الملخص التنفيذي" data-en="Executive Summary">الملخص التنفيذي</h1>
 
-      <nav class="main-nav">
-        <a href="index" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-        <a href="About Us" data-ar="من نحن" data-en="About Us">من نحن</a>
+    <div class="report-content">
+        <p data-ar="شهد قطاع غزة منذ أكتوبر 2023 تحولًا جذريًا في بنية سوق العمل، تمثل في انهيار شبه كامل في منظومة الأجور، وانتقال متسارع من اقتصاد إنتاجي هش إلى اقتصاد قائم على المساعدات. فقد أكثر من 90% من العمال مصادر دخلهم، وتعرضت القاعدة الإنتاجية لتدمير واسع، مما أدى إلى تفكك العلاقة بين العمل والدخل، وارتفاع غير مسبوق في معدلات الفقر والبطالة." 
+           data-en="Since October 2023, the Gaza Strip has witnessed a radical transformation in the labor market structure, represented by an almost complete collapse of the wage system and an accelerated transition from a fragile productive economy to an aid-based economy. More than 90% of workers have lost their income sources, and the productive base has suffered extensive destruction, leading to the disintegration of the relationship between work and income, and an unprecedented rise in poverty and unemployment rates.">
+           شهد قطاع غزة منذ أكتوبر 2023 تحولًا جذريًا في بنية سوق العمل...
+        </p>
 
-        <div class="tooltip-container">
-          <a href="#" class="submenu-toggle" onclick="toggleSubmenu(event)" data-ar="البرامج" data-en="Programs">البرامج</a>
-          <span class="tooltiptext">
-            <ul>
-              <li><a href="education" data-ar="التعليم" data-en="Education">التعليم</a></li>
-              <li><a href="health" data-ar="الصحة" data-en="Health">الصحة</a></li>
-              <li><a href="Emergency Response" data-ar="الإستجابة للطوارئ" data-en="Emergency Response">الإستجابة للطوارئ</a></li>
-              <li><a href="Protection" data-ar="الحماية" data-en="Protection">الحماية</a></li>
-              <li><a href="CSEE" data-ar="التمكين المدني والاجتماعي والاقتصادي" data-en="Civil, Social & Economic Empowerment">التمكين المدني والاجتماعي والاقتصادي</a></li>
-              
-            </ul>
-          </span>
+        <p data-ar="تتمثل المشكلة الأساسية في غياب منظومة فعالة لحماية أجور العمال، في ظل تعطّل تطبيق القوانين، وضعف الرقابة، وتراجع دور المؤسسات الرسمية والنقابية. وقد أدى ذلك إلى انتشار أنماط عمل هشة، تشمل انخفاض الأجور، والعمل غير المنتظم، والفصل التعسفي، وعدم دفع المستحقات، مما وضع العمال في دائرة الاستغلال وفقدان الأمان الاقتصادي."
+           data-en="The core problem lies in the absence of an effective system to protect workers' wages, amidst the suspension of law enforcement, weak oversight, and the declining role of official and union institutions. This has led to the spread of fragile work patterns, including low wages, irregular work, arbitrary dismissal, and non-payment of entitlements, placing workers in a cycle of exploitation and loss of economic security.">
+           تتمثل المشكلة الأساسية في غياب منظومة فعالة لحماية أجور العمال...
+        </p>
+
+        <p data-ar="تعتمد هذه الورقة على تحليل قائم على الأدلة، يجمع بين البيانات الكمية الصادرة عن مصادر دولية، والمقابلات الميدانية مع خبراء وفاعلين في قطاع العمل، لتشخيص فجوة السياسات القائمة، والتي تتجلى في ثلاث مستويات رئيسية: فجوة في التنفيذ نتيجة عدم تطبيق القوانين، فجوة في الاستهداف بسبب غياب برامج موجهة للعمال، وفجوة في النهج نتيجة التركيز على المساعدات الإنسانية دون ربطها بسوق العمل أو التعافي الاقتصادي."
+           data-en="This paper relies on evidence-based analysis, combining quantitative data from international sources with field interviews with experts and labor market actors to diagnose the existing policy gap. This gap manifests at three main levels: an implementation gap due to the non-application of laws, a targeting gap due to the absence of worker-oriented programs, and an approach gap resulting from a focus on humanitarian aid without linking it to the labor market or economic recovery.">
+           تعتمد هذه الورقة على تحليل قائم على الأدلة...
+        </p>
+
+        <p data-ar="في ضوء ذلك، تستعرض الورقة مجموعة من الخيارات السياساتية المتدرجة، أبرزها برامج “النقد مقابل العمل” كمدخل فوري لتوفير الدخل وتحريك الاقتصاد المحلي، وبرامج دعم الأجور للحفاظ على الوظائف القائمة، إلى جانب إنشاء صندوق وطني لتعويض العمال ودعم إعادة تشغيل المشاريع الصغيرة والمتوسطة، وتطوير تدخلات داعمة للاقتصاد المنزلي."
+           data-en="In light of this, the paper reviews a set of graduated policy options, most notably 'Cash for Work' programs as an immediate entry point for providing income and stimulating the local economy, and wage support programs to maintain existing jobs, alongside establishing a national fund to compensate workers, supporting the restart of small and medium enterprises, and developing interventions supportive of the home-based economy.">
+           في ضوء ذلك، تستعرض الورقة مجموعة من الخيارات السياساتية...
+        </p>
+
+        <p data-ar="تخلص الورقة إلى أن الاستجابة الفعالة لأزمة أجور العمال في قطاع غزة تتطلب تحولًا استراتيجيًا من نهج الإغاثة قصيرة الأمد إلى سياسات قائمة على التشغيل والدخل والإنتاج، ضمن إطار زمني واضح لمرحلة التعافي المبكر. كما تؤكد على أهمية تبنّي تدخلات متكاملة تربط بين المساعدات والتشغيل، بما يضمن استعادة كرامة العمال، وتحفيز الدورة الاقتصادية، والحد من الاعتماد طويل الأمد على المساعدات."
+           data-en="The paper concludes that an effective response to the workers' wage crisis in the Gaza Strip requires a strategic shift from a short-term relief approach to policies based on employment, income, and production within a clear timeframe for the early recovery phase. It also emphasizes the importance of adopting integrated interventions that link aid and employment, ensuring the restoration of workers' dignity, stimulating the economic cycle, and reducing long-term dependence on aid.">
+           تخلص الورقة إلى أن الاستجابة الفعالة لأزمة أجور العمال...
+        </p>
+
+        <div class="highlight-section">
+            <p data-ar="تقدّم هذه الورقة خارطة طريق عملية لصنّاع القرار والجهات الفاعلة، تستند إلى تحليل واقعي وأدلة ميدانية، وهدفها دعم الانتقال من الاستجابة الإنسانية قصيرة الأمد إلى مسار تعافٍ اقتصادي تدريجي ومستدام."
+               data-en="This paper provides a practical roadmap for policymakers and actors, based on realistic analysis and field evidence, aiming to support the transition from short-term humanitarian response to a gradual and sustainable economic recovery path.">
+               تقدّم هذه الورقة خارطة طريق عملية لصنّاع القرار...
+            </p>
         </div>
-
-        <a href="index" data-ar="الشركاء" data-en="Partners">الشركاء</a>
-
-        
-           <a href="Opinions" data-ar="الآراء" data-en="Opinions">الآراء </a>
-         
-       
-
-        <a href="Relief Services" data-ar="خدمات الإغاثة" data-en="Relief">خدمات الإغاثة</a>
-
-        <div class="tooltip-container">
-          <a href="#" class="submenu-toggle" onclick="toggleSubmenu(event)" data-ar="تقديم طلب" data-en="Apply">تقديم طلب</a>
-          <span class="tooltiptext">
-            <ul>
-              <li><a href="volunteer" data-ar="طلب متطوعين" data-en="Volunteer Request">طلب متطوعين</a></li>
-              <li><a href="Beneficiary" data-ar="طلب استفادة" data-en="Beneficiary Request">طلب استفادة</a></li>
-            </ul>
-          </span>
-        </div>
-
-        <a href="Complaints Mechanism" data-ar="آليه الشكاوي" data-en="Complaints">آليه الشكاوي</a>
-        <a href="index" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
-      </nav>
     </div>
-  </div>
-</header>
-
-<!-- محتوى سياسة الخصوصية -->
-<div class="privacy-container">
-  <h1 class="privacy-page-title" data-ar="سياسة الخصوصية" data-en="Privacy Policy">
-    سياسة الخصوصية
-  </h1>
-
-  <h2 data-ar="1. مقدمة" data-en="1. Introduction">1. مقدمة</h2>
-  <p data-ar="نلتزم في KLBONYAN بحماية خصوصية زوار موقعنا وضمان سرية المعلومات التي يتم جمعها." 
-     data-en="KLBONYAN is committed to protecting the privacy of our visitors and ensuring the confidentiality of the information collected.">
-    نلتزم في KLBONYAN بحماية خصوصية زوار موقعنا وضمان سرية المعلومات التي يتم جمعها.
-  </p>
-
-  <h2 data-ar="2. جمع المعلومات" data-en="2. Information Collection">2. جمع المعلومات</h2>
-  <p data-ar="قد نقوم بجمع معلومات تقنية مثل عنوان IP ونوع المتصفح لتحسين تجربة المستخدم." 
-     data-en="We may collect technical information such as IP addresses and browser type to improve user experience.">
-    قد نقوم بجمع معلومات تقنية مثل عنوان IP ونوع المتصفح لتحسين تجربة المستخدم.
-  </p>
-
-  <h2 data-ar="3. سياسة التتبع" data-en="3. Tracking Policy">3. سياسة التتبع</h2>
-  <p data-ar="نستخدم ملفات تعريف الارتباط وأدوات التحليل لتتبع عدد الزوار وأنماط الاستخدام، دون الكشف عن هويتك." 
-     data-en="We use cookies and analytics tools to track visitor numbers and usage patterns, without revealing your identity.">
-    نستخدم ملفات تعريف الارتباط وأدوات التحليل لتتبع عدد الزوار وأنماط الاستخدام، دون الكشف عن هويتك.
-  </p>
-
-  <h2 data-ar="4. حماية المعلومات" data-en="4. Information Protection">4. حماية المعلومات</h2>
-  <p data-ar="نتخذ الإجراءات الأمنية المناسبة لحماية البيانات من الوصول غير المصرح به." 
-     data-en="We take appropriate security measures to protect data from unauthorized access.">
-    نتخذ الإجراءات الأمنية المناسبة لحماية البيانات من الوصول غير المصرح به.
-  </p>
-
-  <h2 data-ar="5. الاتصال بنا" data-en="5. Contact Us">5. الاتصال بنا</h2>
-  <p data-ar="لأي استفسار، يمكنكم التواصل عبر البريد: info@klbonyan.org" 
-     data-en="For any inquiries, you can contact us via email: info@klbonyan.org">
-    لأي استفسار، يمكنكم التواصل عبر البريد: info@klbonyan.org
-  </p>
-</div>
+</main>
 
 
-<!-- الفوتر -->
+<!-- الفوتر (كما هو في كودك) -->
 <footer class="site-footer">
   <div class="footer-container">
     <div class="footer-text">
@@ -205,16 +147,17 @@ html[dir="ltr"] .lang-btn {
   </p>
 </footer>
 
-
 <script>
 let currentLang = "ar";
 
 function toggleLanguage() {
   currentLang = currentLang === "ar" ? "en" : "ar";
-
   document.documentElement.lang = currentLang;
   document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
-  document.querySelector(".lang-btn").textContent = currentLang === "ar" ? "EN" : "AR";
+  
+  // تأكد من وجود زر lang-btn لتجنب الأخطاء
+  const btn = document.querySelector(".lang-btn");
+  if(btn) btn.textContent = currentLang === "ar" ? "EN" : "AR";
 
   const elements = document.querySelectorAll('[data-ar][data-en]');
   elements.forEach(el => {
@@ -224,13 +167,7 @@ function toggleLanguage() {
 
 function toggleMenu() {
   const nav = document.querySelector('.main-nav');
-  nav.classList.toggle('show'); 
-}
-
-function toggleSubmenu(event) {
-  event.preventDefault();
-  const submenu = event.target.nextElementSibling;
-  submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+  if(nav) nav.classList.toggle('show'); 
 }
 </script>
 
