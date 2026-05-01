@@ -1,1 +1,99 @@
 a,body,h1,h2,h3{font-family:Cairo,sans-serif}.donate-btn,.donate-float-btn{background-color:#f0cc8e;text-decoration:none;font-weight:700}body{margin:0;padding-top:120px}li,p{font-family:Roboto,sans-serif}#partners{scroll-margin-top:160px}#Contact{scroll-margin-top:200px}html{scroll-behavior:smooth}.donate-float-btn{position:fixed;bottom:20px;right:20px;color:#000;font-size:18px;padding:15px 25px;border-radius:50px;box-shadow:0 5px 15px rgba(0,0,0,.3);z-index:9999;display:flex;align-items:center;gap:10px;opacity:0;pointer-events:none;transition:transform .3s,box-shadow .3s,opacity .5s;animation:2s infinite pulse}.donate-float-btn.show{opacity:1;pointer-events:auto}.donate-float-btn i{font-size:22px;color:red}.donate-float-btn:hover{transform:scale(1.1);box-shadow:0 0 25px #f0cc8e}@keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 0 15px rgba(240,204,142,.7)}50%{transform:scale(1.05);box-shadow:0 0 25px #f0cc8e}}.hero-section{position:relative;background-image:url('img/5نهائي.jpg');background-position:center;background-repeat:no-repeat;background-size:cover;width:100%;height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;color:#fff;padding:0 20px;margin-top:36px;box-sizing:border-box;border-radius:20px;overflow:hidden}.header-text{position:absolute;top:50%;left:5%;transform:translateY(-50%);max-width:86%;margin:0;color:#000;font-size:32px;line-height:1.2;text-align:left;word-break:break-word;white-space:normal;z-index:5}@media (max-width:480px){.hero-section{background-size:cover;background-position:center;padding:0 15px}.header-text{font-size:15px!important;padding:3px!important;top:50%!important}}.donate-container{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);z-index:10}@media (max-width:768px){.donate-float-btn{font-size:16px;padding:12px 20px;bottom:15px;right:15px}.donate-float-btn i{font-size:20px}.hero-section{height:200px}.header-text{font-size:28px}.donate-container{bottom:auto;top:90%;left:50%;transform:translate(-50%,-50%)}.donate-btn{font-size:12px;padding:6px 12px;animation:2s ease-in-out infinite pulseGlowMobile}}.donate-btn{font-size:14px;padding:8px 20px;color:#000;border-radius:25px;border:3px solid #f0cc8e;cursor:pointer;white-space:nowrap;box-shadow:0 0 20px #f0cc8e,0 0 40px rgba(240,204,142,.8),0 0 60px rgba(240,204,142,.6);animation:2s ease-in-out infinite pulseGlow;transition:.3s}@keyframes pulseGlowMobile{0%,100%{transform:translate(-50%,-50%) scale(.8);box-shadow:0 0 15px rgba(240,204,142,.9),0 0 30px rgba(240,204,142,.7),0 0 45px rgba(240,204,142,.5)}50%{transform:translate(-50%,-50%) scale(.88);box-shadow:0 0 25px #f0cc8e,0 0 50px rgba(240,204,142,.9),0 0 75px rgba(240,204,142,.7)}}.donate-btn:hover{transform:scale(1.15);box-shadow:0 0 40px #f0cc8e,0 0 80px rgba(240,204,142,.95),0 0 120px rgba(240,204,142,.85)}.team-section{text-align:center;padding:30px 20px;background:#f4f5f6;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.1);margin:20px auto;max-width:1150px}.partners-section h2,.team-section h2{font-size:30px;margin-bottom:50px;position:relative;top:-30px;font-weight:700;background:linear-gradient(90deg,#000,#000);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.team-info h3{white-space:nowrap;text-align:center;margin:0 auto}.team-container{display:flex;justify-content:center;gap:30px;flex-wrap:wrap}.team-card{background:#fff;border-radius:20px;padding:50px 20px 20px;width:280px;box-shadow:0 8px 20px rgba(0,0,0,.15);transition:transform .8s,opacity .8s,box-shadow .4s;position:relative;overflow:visible;opacity:0;transform:translateY(50px)}.team-card.show{opacity:1;transform:translateY(0)}.team-card:hover{transform:translateY(-12px);box-shadow:0 15px 35px rgba(0,0,0,.25)}.team-img{position:absolute;top:-40px;left:50%;transform:translateX(-50%)}.achievement-card,.partners-section{position:relative;text-align:center;overflow:hidden}.team-img img{width:auto;height:120px;max-width:100%;border-radius:50%;object-fit:contain;border:4px solid #f0cc8e;background:#fff;transition:transform .3s}.team-card:hover .team-img img{transform:scale(1.1)}.team-info{margin-top:70px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:5px}.team-card h3{margin:0;font-size:20px;color:#000}.team-card p{font-size:15px;color:#555;margin:0}.social-links{display:flex;justify-content:center;gap:15px}.social-links a{font-size:20px;color:#555;transition:color .3s,transform .3s}.social-links a.fb:hover{color:#3b5998;transform:scale(1.2)}.social-links a.ig:hover{color:#e4405f;transform:scale(1.2)}.partners-section{padding:60px 20px;background:#f5eee3;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.1);margin:30px auto;max-width:1200px}.partners-section::before{content:"";position:absolute;bottom:50%;left:-100%;width:300%;height:20px;background:#f0c080;border-radius:50%;transform:rotate(0);animation:4s linear infinite waveMove;clip-path:polygon(0% 50%,10% 40%,20% 60%,30% 40%,40% 60%,50% 40%,60% 60%,70% 40%,80% 60%,90% 40%,100% 50%)}@keyframes waveMove{0%{transform:translateX(0)}100%{transform:translateX(-33.33%)}}.partners-section:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,.15)}.partners-slider{overflow:hidden;width:100%}.partners-track{display:flex;gap:60px;animation:20s linear infinite slide,1.5s forwards fadeIn;opacity:0}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.partners-track .partner-logo{flex-shrink:0}.partner-logo img{max-height:120px;width:auto;display:block;cursor:pointer;transition:transform .2s}.partner-logo a{display:inline-block;transition:transform .2s}.partner-logo a:hover{transform:scale(.95)}.partner-logo a:active{transform:scale(.9)}.partner-logo:hover img,.partners-slider:hover .partners-track{animation-play-state:paused}@keyframes slide{0%{transform:translateX(100%)}100%{transform:translateX(-50%)}}@media screen and (max-width:768px){.partners-track{gap:20px}.partner-logo img{max-height:60px}}.achievements-section{background:linear-gradient(135deg,#bdb8b1,#ecd9b8,#f1ece5,#e3d9c9);background-size:400% 400%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;text-align:center;border-radius:30px;overflow:hidden;margin-bottom:60px;animation:15s infinite gradientMove}@keyframes gradientMove{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}.achievements-section .row>[class*=col-]{margin-bottom:60px;padding-left:30px;padding-right:30px}.achievements-section h2{margin-bottom:50px;font-size:32px;font-weight:700}.achievements-section .row{display:flex;flex-wrap:wrap;justify-content:center}.achievement-card{background:#fff;border-radius:25px;padding:15px 10px;width:140px;height:260px;box-shadow:0 12px 30px rgba(0,0,0,.2);display:flex;flex-direction:column;justify-content:space-between;align-items:center}.achievement-card .icon i{font-size:3rem;margin-bottom:0}.achievement-card .counter{font-size:28px;font-weight:700;color:#f0cc8e;margin:0}.achievement-card p{font-size:20px;color:#444;margin:0}
+
+/* تنسيقات قسم الأخبار */
+.news-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: right; /* للغة العربية */
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+}
+
+.news-img {
+    position: relative;
+    height: 200px;
+}
+
+.news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-date {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #F0CC8E;
+    color: #000;
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.news-info {
+    padding: 20px;
+}
+
+.news-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.news-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.read-more {
+    color: #F0CC8E;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #000;
+}
+
+/* ضبط الاتجاه عند تبديل اللغة للإنجليزية */
+body.en .news-card {
+    text-align: left;
+}
+body.en .news-date {
+    right: auto;
+    left: 10px;
+}
