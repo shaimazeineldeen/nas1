@@ -120,6 +120,32 @@
             max-width: 90% !important;
         }
     }
+    .download-section {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        border: 1px dashed #ced4da;
+    }
+    .btn-download {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #2c3e50;
+        color: white !important;
+        padding: 12px 25px;
+        text-decoration: none !important;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+    }
+    .btn-download:hover {
+        background-color: #e67e22;
+    }
+    .btn-download i {
+        font-size: 1.2rem;
+    }
   </style>
 </head>
 <body>
@@ -128,7 +154,21 @@
     
     <!-- الصورة في الأعلى -->
     <img src="img/news1.jpg" alt="سوق العمل في غزة" class="report-image">
+<main class="report-container">
+    
+    <!-- الصورة -->
+    
+    <!-- قسم تحميل الملف -->
+    <div class="download-section">
+        <a href="pdf/policy-paper-2026.pdf" class="btn-download" download>
+            <i class="fas fa-file-pdf"></i>
+            <span data-ar="تحميل التقرير كاملاً (PDF)" data-en="Download Full Report (PDF)">تحميل التقرير كاملاً (PDF)</span>
+        </a>
+    </div>
 
+    <h1 class="report-title" data-ar="الملخص التنفيذي" data-en="Executive Summary">الملخص التنفيذي</h1>
+    
+    <!-- باقي المحتوى... -->
     <h1 class="report-title" data-ar="الملخص التنفيذي" data-en="Executive Summary">الملخص التنفيذي</h1>
 
     <div class="report-content">
