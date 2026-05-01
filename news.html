@@ -71,8 +71,7 @@
     </div>
   </div>
 </header>
-
-  <style>
+<style>
     /* تنسيقات إضافية لضمان جمالية عرض التقرير */
     .report-container {
         max-width: 900px;
@@ -81,13 +80,19 @@
         background: #fff;
         line-height: 1.8;
     }
+    
     .report-image {
-        width: 100%;
+        /* تعديلات لتصغير الصورة */
+        display: block;        /* لجعل التوسط التلقائي يعمل */
+        max-width: 60% !important; /* تحديد حد أقصى لعرض الصورة (يمكنك تغيير النسبة) */
         height: auto;
+        margin: 0 auto 25px auto; /* يتوسط أفقياً (0 auto) مع هامش سفلي (25px) */
+        
+        /* التنسيقات الجمالية السابقة */
         border-radius: 12px;
-        margin-bottom: 25px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+    
     .report-title {
         color: #2c3e50;
         border-bottom: 3px solid #e67e22;
@@ -107,6 +112,13 @@
         padding: 20px;
         border-radius: 4px;
         margin-top: 30px;
+    }
+
+    /* تحسين للموبايل لتصبح الصورة أكبر قليلاً لتناسب الشاشة الصغيرة */
+    @media (max-width: 768px) {
+        .report-image {
+            max-width: 90% !important;
+        }
     }
   </style>
 </head>
