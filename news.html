@@ -10,6 +10,68 @@
   <link rel="icon" type="image/webp" href="https://klbonyan.org/img/كالبنيان2.webp">
   <link rel="shortcut icon" href="https://klbonyan.org/img/كالبنيان2.webp" type="image/webp">
 
+
+  
+ <header>
+
+  <button class="lang-btn" onclick="toggleLanguage()">EN</button>
+  
+
+  <div class="header-content">
+    
+    <div class="header-right">
+      <div class="logo">
+       <img src="img/كالبنيان2.webp" alt="شعار المؤسسة">
+      </div>
+    </div>
+
+    
+    <div class="header-center">
+      
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <nav class="main-nav">
+        <a href="index" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+        <a href="About Us" data-ar="من نحن" data-en="About Us">من نحن</a>
+
+        <div class="tooltip-container">
+          <a href="#" class="submenu-toggle" onclick="toggleSubmenu(event)" data-ar="البرامج" data-en="Programs">البرامج</a>
+          <span class="tooltiptext">
+            <ul>
+              <li><a href="education" data-ar="التعليم" data-en="Education">التعليم</a></li>
+              <li><a href="health" data-ar="الصحة" data-en="Health">الصحة</a></li>
+              <li><a href="Emergency Response" data-ar="الإستجابة للطوارئ" data-en="Emergency Response">الإستجابة للطوارئ</a></li>
+              <li><a href="Protection" data-ar="الحماية" data-en="Protection">الحماية</a></li>
+              <li><a href="CSEE" data-ar="التمكين المدني والاجتماعي والاقتصادي" data-en="Civil, Social & Economic Empowerment">التمكين المدني والاجتماعي والاقتصادي</a></li>
+            </ul>
+          </span>
+        </div>
+         
+        <a href="news" data-ar="البحوث والسياسات" data-en="Research & Policy">البحوث والسياسات</a>
+        <a href="#partners" data-ar="الشركاء" data-en="Partners">الشركاء</a>
+
+                   <a href="Opinions" data-ar="الآراء" data-en="Opinions">الآراء </a>
+
+
+        <a href="Relief Services" data-ar="خدمات الإغاثة" data-en="Relief">خدمات الإغاثة</a>
+
+        <div class="tooltip-container">
+          <a href="#" class="submenu-toggle" onclick="toggleSubmenu(event)" data-ar="تقديم طلب" data-en="Apply">تقديم طلب</a>
+          <span class="tooltiptext">
+            <ul>
+              <li><a href="volunteer" data-ar="طلب متطوعين" data-en="Volunteer Request">طلب متطوعين</a></li>
+              <li><a href="Beneficiary" data-ar="طلب استفادة" data-en="Beneficiary Request">طلب استفادة</a></li>
+            </ul>
+          </span>
+        </div>
+
+        <a href="Complaints Mechanism" data-ar="آليه الشكاوي" data-en="Complaints">آليه الشكاوي</a>
+        <a href="#Contact" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
   <style>
     /* تنسيقات إضافية لضمان جمالية عرض التقرير */
     .report-container {
@@ -53,7 +115,7 @@
 <main class="report-container">
     
     <!-- الصورة في الأعلى -->
-    <img src="https://via.placeholder.com/900x450" alt="سوق العمل في غزة" class="report-image">
+    <img src="img/news1.jpg" alt="سوق العمل في غزة" class="report-image">
 
     <h1 class="report-title" data-ar="الملخص التنفيذي" data-en="Executive Summary">الملخص التنفيذي</h1>
 
