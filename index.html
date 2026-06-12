@@ -122,33 +122,45 @@
 </section>
 
 
-
+<!-- قسم الفريق التنفيذي المعدل -->
 <section class="team-section">
   <h2 data-ar="فريقنا التنفيذي" data-en="Our Executive Team">
     فريقنا التنفيذي
     <span class="line"></span>
   </h2>
-  <div class="team-container">
 
-   
-    <div class="team-card">
-      <div class="team-img">
-       <img src="img/ضياء.jpg" alt="Admin 1">
+  <!-- بطاقة رئيس مجلس الإدارة المميزة -->
+  <div class="chairman-container">
+    <div class="chairman-card">
+      <div class="chairman-img">
+        <img src="img/ضياء.jpg" alt="رئيس مجلس الإدارة">
       </div>
-      <div class="team-info">
-        <h3 data-ar="ضياء أبو عصر" data-en="Diaa Abu Aser"> ضياء أبو عصر</h3>
-        <p data-ar="مدير عام" data-en="Director General">مدير عام</p>
+      <div class="chairman-content">
+        <div class="chairman-header">
+          <h3 data-ar="ضياء أبو عصر" data-en="Diaa Abu Aser">ضياء أبو عصر</h3>
+          <p class="title" data-ar="رئيس مجلس الإدارة" data-en="Chairman of the Board">رئيس مجلس الإدارة</p>
+        </div>
+        
+        <div class="chairman-speech">
+          <h4>كلمة رئيس مجلس الإدارة:</h4>
+          <p data-ar="تأسست NAS لتكون التطور المؤسسي لسنوات من العمل الميداني الحيوي تحت اسم مجموعة 'كالبنيان'. نحن لا نبدأ من الصفر، بل نستند إلى إرث يضم أكثر من 187 مبادرة و مشروعاً نجحنا من خلالها في الوصول إلى 620,310 مستفيد. إيماننا في NAS يتجاوز الدعم التقليدي؛ نحن نركز بشكل أساسي على تمكين الشباب ودعم التعلم و الحماية والاستجابة العاجلة للطوارئ، مع الالتزام بتمكين الفئات الأكثر هشاشة."
+             data-en="NAS was established to be the institutional evolution of years of vital fieldwork under the name of the 'Kalbanyan' group. We are not starting from scratch, but rather building on a legacy of more than 187 initiatives and projects through which we successfully reached 620,310 beneficiaries. Our belief at NAS goes beyond traditional support; we focus primarily on empowering youth, supporting education, protection, and urgent emergency response, with a commitment to empowering the most vulnerable groups.">
+            تأسست NAS لتكون التطور المؤسسي لسنوات من العمل الميداني الحيوي تحت اسم مجموعة "كالبنيان" . نحن لا نبدأ من الصفر، بل نستند إلى إرث يضم أكثر من 187 مبادرة و مشروعاً نجحنا من خلالها في الوصول إلى 620,310 مستفيد.
+            إيماننا في NAS يتجاوز الدعم التقليدي؛ نحن نركز بشكل أساسي على تمكين الشباب ودعم التعلم و الحماية والاستجابة العاجلة للطوارئ، مع الالتزام بتمكين الفئات الأكثر هشاشة.
+          </p>
+        </div>
+
         <div class="social-links">
           <a href="https://www.facebook.com/diaa.hasan.179145" class="fb"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/diaa.hasan.11/" class="ig"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
+  </div>
 
-    
-   
+  <!-- باقي أعضاء الفريق التنفيذي -->
+  <div class="team-container">
 
-    
     <div class="team-card">
       <div class="team-img">
         <img src="img/حمزة.jpg" alt="Admin 2">
@@ -162,9 +174,10 @@
         </div>
       </div>
     </div>
-     <div class="team-card">
+
+    <div class="team-card">
       <div class="team-img">
-      <img src="img/علاء.jpg" alt="Admin 3">
+        <img src="img/علاء.jpg" alt="Admin 3">
       </div>
       <div class="team-info">
         <h3 data-ar=" علاء أبو عصر" data-en="Alaa Abu Aser"> علاء أبو عصر</h3>
@@ -175,7 +188,8 @@
         </div>
       </div>
     </div>
-<div class="team-card">
+
+    <div class="team-card">
       <div class="team-img">
         <img src="img/شيماء.jpg" alt="Admin 4">
       </div>
@@ -189,7 +203,6 @@
       </div>
     </div>
 
-    
     <div class="team-card">
       <div class="team-img">
         <img src="img/اسيل.jpg" alt="Admin 5">
@@ -204,10 +217,9 @@
       </div>
     </div>
 
-  
     <div class="team-card">
       <div class="team-img">
-      <img src="img/صهيب6.jpg" alt="Admin 6">
+        <img src="img/صهيب6.jpg" alt="Admin 6">
       </div>
       <div class="team-info">
         <h3 data-ar="صهيب زين الدين" data-en="Suhaib Zeineldeen">صهيب زين الدين</h3>
@@ -221,6 +233,107 @@
 
   </div>
 </section>
+
+<!-- التنسيقات الخاصة ببطاقة رئيس مجلس الإدارة (أضفها في قسم الـ <style> أو ملف CSS) -->
+<style>
+  .chairman-container {
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+  }
+
+  .chairman-card {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: right;
+    border-right: 5px solid #F0CC8E;
+  }
+
+  .chairman-img {
+    flex: 0 0 250px;
+    height: auto;
+  }
+
+  .chairman-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .chairman-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .chairman-header h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+
+  .chairman-header .title {
+    color: #F0CC8E;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .chairman-speech h4 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .chairman-speech p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+  }
+
+  .chairman-content .social-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+  }
+
+  .chairman-content .social-links a {
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+
+  .chairman-content .social-links a:hover {
+    color: #F0CC8E;
+  }
+
+  /* دعم اللغة الإنجليزية وتجاوب الشاشات */
+  body.en .chairman-card {
+    text-align: left;
+    border-right: none;
+    border-left: 5px solid #F0CC8E;
+  }
+
+  @media (max-width: 768px) {
+    .chairman-card {
+      flex-direction: column;
+    }
+    .chairman-img {
+      flex: 0 0 250px;
+      height: 250px;
+    }
+    .chairman-img img {
+      object-position: top;
+    }
+  }
+</style>
 <!-- قسم الأخبار - News Section -->
 <section class="news-section">
   <h2 data-ar="البحث والسياسات" data-en="Research & Policy">
