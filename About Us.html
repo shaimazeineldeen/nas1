@@ -209,10 +209,9 @@ html[dir="ltr"] .lang-btn {
 </div>
 <!-- قسم الشركاء والممولين -->
 <div class="form-group">
-  <!-- إضافة كلاس دمج وتنسيق الأيقونة مع النص -->
-  <h3 id="partners-title" style="display: flex; align-items: center; gap: 10px;">
-    <i class="fas fa-handshake"></i> 
-    <!-- تم إضافة مسافات صحيحة بين الكلمات هنا لضمان عدم نزول السطر -->
+  <!-- التعديل هنا: أضفنا white-space لمنع تكسر السطر، وقمنا بتنسيق النص ككتلة واحدة بجانب الأيقونة -->
+  <h3 id="partners-title" style="display: flex; align-items: center; justify-content: flex-start; gap: 12px; white-space: nowrap; width: 100%;">
+    <i class="fas fa-handshake" style="flex-shrink: 0;"></i> 
     <span class="title-text" data-ar="الشركاء والممولون:" data-en="Partners & Funders:">الشركاء والممولون:</span>
   </h3>
   
