@@ -310,31 +310,30 @@
   }
 
   /* تنسيق الأزرار الجديدة والتوسيط */
-  .social-links-chairman {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-    justify-content: center; /* توسيط الأيقونات أسفل الكرت */
-  }
+  /* تنسيق أيقونات التواصل الاجتماعي الافتراضي */
+.social-links-chairman {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* توسيط الأيقونات دائماً */
+}
 
-  /* الألوان المحددة للروابط مع تأثير الـ Hover */
-  .social-links-chairman a {
-    font-size: 20px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
+/* الألوان الافتراضية للأيقونات قبل تمرير الماوس (رمادي غامق متناسق مع الموقع) */
+.social-links-chairman a {
+  font-size: 20px;
+  color: #555555 !important; 
+  text-decoration: none;
+  transition: color 0.2s ease; /* تمرير ناعم للون فقط */
+}
 
-  .social-links-chairman a:hover {
-    transform: scale(1.2);
-    opacity: 0.85;
-  }
+/* تأثير تمرير الماوس - تغيير اللون فقط دون حركة أو تكبير */
+.social-links-chairman a.fb-blue:hover {
+  color: #1877F2 !important; /* يتحول لأزرق فيسبوك عند لمسه بالماوس */
+}
 
-  .fb-blue {
-    color: #1877F2 !important; /* أزرق فيسبوك الرسمي */
-  }
-
-  .ig-pink {
-    color: #E1306C !important; /* زهري انستغرام الرسمي */
-  }
+.social-links-chairman a.ig-pink:hover {
+  color: #E1306C !important; /* يتحول لزهري انستغرام عند لمسه بالماوس */
+}
 
   /* =======================================================
      تحويل الاتجاه بالكامل للجهة الأخرى عند تفعيل اللغة الإنجليزية 
