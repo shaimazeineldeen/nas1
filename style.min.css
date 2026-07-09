@@ -199,15 +199,7 @@ body {
 }
 
 /* 🛠️ تعديل الصورة نفسها لتملأ الدائرة بدون تمطيط 🛠️ */
-.team-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;    /* قص الزوائد تلقائياً والمحافظة على أبعاد الصورة الأصلية */
-    object-position: center; /* تمركز الصورة في المنتصف */
-    transition: transform .3s;
-    border-radius: 0;     /* تصفير بوردر الصورة لأن الإطار الخارجي دائري بالفعل */
-    border: none;         /* حذف البوردر القديم من الصورة ونقله للإطار الخارجي */
-}
+
 
 .team-card:hover .team-img img {
     transform: scale(1.1);
