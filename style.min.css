@@ -185,7 +185,33 @@ body {
 }
 
 /* 🛠️ تعديل الإطار الخارجي للصورة عشان تطلع دائرية تماماً 🛠️ */
+.team-img {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;         /* عرض ثابت ومحدد */
+    height: 120px;        /* ارتفاع ثابت مساوي للعرض تماماً */
+    border-radius: 50%;   /* إجبار الإطار على أن يكون دائري */
+    overflow: hidden;     /* إخفاء أي أجزاء من الصورة تخرج عن الدائرة */
+    border: 4px solid #f0cc8e;
+    background: #fff;
+}
 
+/* 🛠️ تعديل الصورة نفسها لتملأ الدائرة بدون تمطيط 🛠️ */
+.team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* قص الزوائد تلقائياً والمحافظة على أبعاد الصورة الأصلية */
+    object-position: center; /* تمركز الصورة في المنتصف */
+    transition: transform .3s;
+    border-radius: 0;     /* تصفير بوردر الصورة لأن الإطار الخارجي دائري بالفعل */
+    border: none;         /* حذف البوردر القديم من الصورة ونقله للإطار الخارجي */
+}
+
+.team-card:hover .team-img img {
+    transform: scale(1.1);
+}
 
 .team-info {
     margin-top: 70px;
